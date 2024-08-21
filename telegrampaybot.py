@@ -38,7 +38,7 @@ async def product_selected(update: Update, context: CallbackContext) -> None:
         'amount': product['price'],
         'currency': 'USD',
         'lifeTime': 30,  # Expiration time in minutes
-        'callbackUrl': 'https://your-app-name.herokuapp.com/oxapay-webhook',  # Webhook URL
+        'callbackUrl': 'https://botas-ad0330beb1f6.herokuapp.com/oxapay-webhook',  # Webhook URL
       #  'returnUrl': 'https://yourdomain.com/success',  # Replace with your return URL
         'description': f'Purchase of {product["name"]}',
         'orderId': f'{update.effective_chat.id}-{product_key}',
